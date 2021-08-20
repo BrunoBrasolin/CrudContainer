@@ -15644,13 +15644,33 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\t2s-bruno\\www\\CrudContainer\\Views\\Container\\Index.cshtml",
-      "TargetPath": "Views\\Container\\Index.cshtml",
+      "FilePath": "c:\\Users\\t2s-bruno\\www\\CrudContainer\\Views\\Containers\\Edit.cshtml",
+      "TargetPath": "Views\\Containers\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\t2s-bruno\\www\\CrudContainer\\Views\\Containers\\Details.cshtml",
+      "TargetPath": "Views\\Containers\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\t2s-bruno\\www\\CrudContainer\\Views\\Containers\\Create.cshtml",
+      "TargetPath": "Views\\Containers\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\t2s-bruno\\www\\CrudContainer\\Views\\Containers\\Delete.cshtml",
+      "TargetPath": "Views\\Containers\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
       "FilePath": "c:\\Users\\t2s-bruno\\www\\CrudContainer\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\t2s-bruno\\www\\CrudContainer\\Views\\Containers\\Index.cshtml",
+      "TargetPath": "Views\\Containers\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
