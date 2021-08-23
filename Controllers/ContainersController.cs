@@ -19,17 +19,29 @@ namespace CrudContainer.Controllers
     }
 
     // GET: Containers
-    public async Task<IActionResult> Index(string searchString)
+    public async Task<IActionResult> Index(int containerCategory, string searchString)
     {
-      var containers = from c in _context.Container
-                       select c;
+      IQueryable<int> categoryQuery = from c in _context.Container orderby c.Category select c.Category;
+
+      var containers = from c in _context.Container select c;
 
       if (!String.IsNullOrEmpty(searchString))
       {
         containers = containers.Where(s => s.Number.Contains(searchString));
       }
 
-      return View(await containers.ToListAsync());
+      if (!String.IsNullOrEmpty(containerCategory.ToString()))
+      {
+        containers = containers.Where(x => x.Category == containerCategory);
+      }
+
+      var containerCategoryVM = new ContainerCategoryViewModel
+      {
+        Categories = new SelectList(await categoryQuery.Distinct().ToListAsync()),
+        Containers = await containers.ToListAsync()
+      };
+
+      return View(containerCategoryVM);
     }
 
     // GET: Containers/Details/5
