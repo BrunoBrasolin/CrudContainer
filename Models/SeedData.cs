@@ -45,7 +45,7 @@ namespace CrudContainer.Models
               Type = MovementType.BOARDING,
               StartDate = DateTime.Now,
               EndDate = DateTime.Now.AddDays(1),
-              Container = context.Container.First(),
+              Container = context.Container.Single(c => c.Number == "ABCD1234567")
             }
           );
           context.SaveChanges();

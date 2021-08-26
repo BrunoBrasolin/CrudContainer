@@ -19,8 +19,7 @@ public class MvcContainerContext : DbContext
     modelBuilder
         .Entity<Container>()
         .HasMany<Movement>(s => s.Movements)
-        .WithOne(g => g.Container)
-        .OnDelete(DeleteBehavior.Cascade);
+        .WithOne(g => g.Container);
 
     modelBuilder
         .Entity<Container>()

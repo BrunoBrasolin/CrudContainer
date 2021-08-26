@@ -36,8 +36,6 @@ C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\ref\CrudContainer.dll
 C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\CrudContainer.pdb
 C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\CrudContainer.genruntimeconfig.cache
 C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\CrudContainer.csproj.CopyComplete
-C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\t2s-bruno\www\CrudContainer\bin\Debug\net5.0\Humanizer.dll
 C:\Users\t2s-bruno\www\CrudContainer\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\t2s-bruno\www\CrudContainer\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
