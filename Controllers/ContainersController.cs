@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CrudContainer.Models;
+using CrudContainer.Enum;
 
 namespace CrudContainer.Controllers
 {
@@ -19,10 +20,9 @@ namespace CrudContainer.Controllers
     }
 
     // GET: Containers
-    public async Task<IActionResult> Index(int containerCategory, string searchString)
+    public async Task<IActionResult> Index(ContainerCategory containerCategory, string searchString)
     {
-      IQueryable<int> categoryQuery = from c in _context.Container orderby c.Category select c.Category;
-
+      IQueryable<ContainerCategory> categoryQuery = from c in _context.Container orderby c.Category select c.Category;
       var containers = from c in _context.Container select c;
 
       if (!String.IsNullOrEmpty(searchString))

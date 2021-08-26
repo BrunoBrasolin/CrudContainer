@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
+using CrudContainer.Enum;
 
 namespace CrudContainer.Models
 {
@@ -19,15 +20,15 @@ namespace CrudContainer.Models
 
     [Range(0, 1)]
     [Required]
-    public int Type { get; set; }
+    public ContainerType Type { get; set; }
 
     [Range(0, 1)]
     [Required]
-    public int Status { get; set; }
+    public ContainerStatus Status { get; set; }
 
     [Range(0, 1)]
     [Required]
-    public int Category { get; set; }
+    public ContainerCategory Category { get; set; }
 
     public ICollection<Movement> Movements { get; set; }
   }

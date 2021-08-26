@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Linq;
+using CrudContainer.Enum;
+
 
 namespace CrudContainer.Models
 {
@@ -19,17 +21,17 @@ namespace CrudContainer.Models
             {
               Number = "ABCD1234567",
               Client = "Client A",
-              Type = 1,
-              Status = 1,
-              Category = 1
+              Type = ContainerType._20ft,
+              Status = ContainerStatus.Cheio,
+              Category = ContainerCategory.Importação
             },
             new Container
             {
               Number = "ABCD1234568",
               Client = "Client B",
-              Type = 0,
-              Status = 0,
-              Category = 0
+              Type = ContainerType._40ft,
+              Status = ContainerStatus.Vazio,
+              Category = ContainerCategory.Exportação
             }
           );
           context.SaveChanges();
