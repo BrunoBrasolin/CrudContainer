@@ -40,7 +40,7 @@
                 @Html.DisplayFor(modelItem => item.EndDate)
             </td>
             <td>
-                <a asp-controller="Containers" asp-action="Details" asp-route-id="@item.Id">
+                <a asp-controller="Containers" asp-action="Details" asp-route-id="@item.Container.Id">
                     @Html.DisplayFor(modelItem => item.Container.Number)
                 </a>
             </td>

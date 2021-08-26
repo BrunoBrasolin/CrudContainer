@@ -42,10 +42,17 @@ namespace CrudContainer.Models
           context.Movement.AddRange(
             new Movement
             {
-              Type = MovementType.BOARDING,
+              Type = MovementType.GATE_IN,
               StartDate = DateTime.Now,
               EndDate = DateTime.Now.AddDays(1),
               Container = context.Container.Single(c => c.Number == "ABCD1234567")
+            },
+            new Movement
+            {
+              Type = MovementType.GATE_OUT,
+              StartDate = DateTime.Now,
+              EndDate = DateTime.Now.AddDays(1),
+              Container = context.Container.Single(c => c.Number == "ABCD1234568")
             }
           );
           context.SaveChanges();
