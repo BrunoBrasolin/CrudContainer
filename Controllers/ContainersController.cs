@@ -22,6 +22,8 @@ namespace CrudContainer.Controllers
     // GET: Containers
     public async Task<IActionResult> Index(ContainerCategory containerCategory, string searchString)
     {
+      string category = containerCategory.ToString() == "ALL" ? "" : containerCategory.ToString();
+
       IQueryable<ContainerCategory> categoryQuery = from c in _context.Container orderby c.Category select c.Category;
       var containers = from c in _context.Container select c;
 
@@ -30,7 +32,7 @@ namespace CrudContainer.Controllers
         containers = containers.Where(s => s.Number.Contains(searchString));
       }
 
-      if (!String.IsNullOrEmpty(containerCategory.ToString()))
+      if (!String.IsNullOrEmpty(category))
       {
         containers = containers.Where(x => x.Category == containerCategory);
       }

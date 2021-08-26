@@ -5,10 +5,12 @@ namespace CrudContainer.Enum
 {
   public enum ContainerCategory
   {
+    [Display(Name = "Todas")]
+    ALL,
     [Display(Name = "Importação")]
-    IMPORT = 0,
+    IMPORT,
 
     [Display(Name = "Exportação")]
-    EXPORT = 1
+    EXPORT
   }
 }
