@@ -1,8 +1,14 @@
+using System.ComponentModel.DataAnnotations;
+
+
 namespace CrudContainer.Enum
 {
   public enum ContainerCategory
   {
-    Importação = 0,
-    Exportação = 1
+    [Display(Name = "Importação")]
+    IMPORT = 0,
+
+    [Display(Name = "Exportação")]
+    EXPORT = 1
   }
 }

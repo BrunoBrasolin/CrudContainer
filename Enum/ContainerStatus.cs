@@ -1,8 +1,12 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace CrudContainer.Enum
 {
   public enum ContainerStatus
   {
-    Cheio = 0,
-    Vazio = 1
+    [Display(Name = "Cheio")]
+    FULL,
+    [Display(Name = "Vazio")]
+    EMPTY
   }
 }

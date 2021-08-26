@@ -22,16 +22,16 @@ namespace CrudContainer.Models
               Number = "ABCD1234567",
               Client = "Client A",
               Type = ContainerType._20ft,
-              Status = ContainerStatus.Cheio,
-              Category = ContainerCategory.Importação
+              Status = ContainerStatus.FULL,
+              Category = ContainerCategory.IMPORT
             },
             new Container
             {
               Number = "ABCD1234568",
               Client = "Client B",
               Type = ContainerType._40ft,
-              Status = ContainerStatus.Vazio,
-              Category = ContainerCategory.Exportação
+              Status = ContainerStatus.EMPTY,
+              Category = ContainerCategory.EXPORT
             }
           );
           context.SaveChanges();
