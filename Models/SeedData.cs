@@ -42,7 +42,7 @@ namespace CrudContainer.Models
           context.Movement.AddRange(
             new Movement
             {
-              Type = 0,
+              Type = MovementType.BOARDING,
               StartDate = DateTime.Now,
               EndDate = DateTime.Now.AddDays(1),
               Container = context.Container.First(),

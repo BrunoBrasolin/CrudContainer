@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using CrudContainer.Enum;
 
 namespace CrudContainer.Models
 {
@@ -7,9 +8,8 @@ namespace CrudContainer.Models
   {
     public int Id { get; set; }
 
-    [Range(0, 6)]
     [Required]
-    public int Type { get; set; }
+    public MovementType Type { get; set; }
 
     [Required]
     [DataType(DataType.Date)]

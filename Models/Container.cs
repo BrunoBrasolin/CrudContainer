@@ -18,15 +18,12 @@ namespace CrudContainer.Models
     [Required]
     public string Client { get; set; }
 
-    [Range(0, 1)]
     [Required]
     public ContainerType Type { get; set; }
 
-    [Range(0, 1)]
     [Required]
     public ContainerStatus Status { get; set; }
 
-    [Range(0, 1)]
     [Required]
     public ContainerCategory Category { get; set; }
 
