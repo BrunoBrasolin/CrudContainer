@@ -5,12 +5,22 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using CrudContainer.Models;
 
-    public class MvcContainerContext : DbContext
-    {
-        public MvcContainerContext (DbContextOptions<MvcContainerContext> options)
-            : base(options)
-        {
-        }
+public class MvcContainerContext : DbContext
+{
+  public MvcContainerContext(DbContextOptions<MvcContainerContext> options)
+      : base(options)
+  {
+    Database.EnsureCreated();
+  }
 
-        public DbSet<CrudContainer.Models.Container> Container { get; set; }
-    }
+  protected override void OnModelCreating(ModelBuilder modelBuilder)
+  {
+    modelBuilder.Entity<Container>()
+        .HasMany<Movement>(s => s.Movements)
+        .WithOne(g => g.Container)
+        .OnDelete(DeleteBehavior.Cascade);
+  }
+
+  public DbSet<CrudContainer.Models.Container> Container { get; set; }
+  public DbSet<CrudContainer.Models.Movement> Movement { get; set; }
+}

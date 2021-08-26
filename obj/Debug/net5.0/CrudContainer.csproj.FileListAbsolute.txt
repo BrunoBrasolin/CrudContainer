@@ -176,3 +176,8 @@ C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\Razor\Views\Containers\Cre
 C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\Razor\Views\Containers\Delete.cshtml.g.cs
 C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\Razor\Views\Containers\Details.cshtml.g.cs
 C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\Razor\Views\Containers\Edit.cshtml.g.cs
+C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\Razor\Views\Movements\Create.cshtml.g.cs
+C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\Razor\Views\Movements\Delete.cshtml.g.cs
+C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\Razor\Views\Movements\Details.cshtml.g.cs
+C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\Razor\Views\Movements\Edit.cshtml.g.cs
+C:\Users\t2s-bruno\www\CrudContainer\obj\Debug\net5.0\Razor\Views\Movements\Index.cshtml.g.cs

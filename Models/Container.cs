@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Collections.Generic;
 
 namespace CrudContainer.Models
 {
@@ -27,5 +28,7 @@ namespace CrudContainer.Models
     [Range(0, 1)]
     [Required]
     public int Category { get; set; }
+
+    public ICollection<Movement> Movements { get; set; }
   }
 }
