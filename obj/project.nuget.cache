@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oCSsbN05IUcYn5vWEJ5fHEhJJW3bJxlc5Ga8IrPOIysQ2oArWklpAKH1Sjeo542d8EXkzbt5vRwPjNd6cpKRog==",
+  "dgSpecHash": "9y4LaipG/3KWoEhnkQR9J7aMu80O8SVMFNw+udNA+T62kUkvQtzqvvSbpADsgGFTCvyJXeLerNNoONIF7dm8Qw==",
   "success": true,
   "projectFilePath": "C:\\Users\\t2s-bruno\\www\\CrudContainer\\CrudContainer.csproj",
   "expectedPackageFiles": [
@@ -145,7 +145,8 @@
     "C:\\Users\\t2s-bruno\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\t2s-bruno\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\t2s-bruno\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\t2s-bruno\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\t2s-bruno\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\t2s-bruno\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }

@@ -54,14 +54,19 @@ namespace CrudContainer.Controllers
     // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("Id,Type,StartDate,EndDate")] Movement movement)
+    public async Task<IActionResult> Create([Bind("Id,Type,Container,StartDate,EndDate")] Movement movement)
     {
+      int containerId = Convert.ToInt32(Request.Form["Container"]);
+      movement.Container = _context.Container.Single(c => c.Id == containerId);
+      ModelState.Clear();
+
       if (ModelState.IsValid)
       {
         _context.Add(movement);
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
       }
+
       return View(movement);
     }
 
